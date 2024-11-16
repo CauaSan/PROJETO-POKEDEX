@@ -1,0 +1,128 @@
+/* Reset básico */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #2c2f33;
+  overflow: hidden;
+}
+
+/* Container da Pokédex */
+.pokedex-container {
+  width: 90%;
+  max-width: 400px;
+  height: 95%;
+  background: linear-gradient(135deg, #e3350d, #f7d02c);
+  border-radius: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Design decorativo */
+.pokedex-container:before {
+  content: "";
+  width: 100px;
+  height: 100px;
+  background: white;
+  border: 5px solid #2a75bb;
+  border-radius: 50%;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.pokedex-container:after {
+  content: "";
+  width: 30px;
+  height: 30px;
+  background: white;
+  border: 3px solid #2a75bb;
+  border-radius: 50%;
+  position: absolute;
+  top: 30px;
+  left: 130px;
+}
+
+/* Pokédex */
+.pokedex {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: white;
+  width: 100%;
+  max-width: 350px;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+/* Barra de pesquisa */
+.search-bar {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+#search-bar {
+  width: 70%;
+  padding: 10px;
+  border: 2px solid #ffcc00;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 5px;
+}
+
+#search-button {
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+#search-button:hover {
+  background-color: #388e3c;
+  transform: scale(1.05);
+}
+
+/* Pokémon Detalhes */
+#pokemon-details img {
+  margin: 15px 0;
+  border: 3px solid #ffcc00;
+  border-radius: 15px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.buttons button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: #ef5350;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.buttons button:hover {
+  background-color: #d32f2f;
+  transform: scale(1.05);
+}
